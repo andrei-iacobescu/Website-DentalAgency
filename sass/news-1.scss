@@ -1,0 +1,455 @@
+@import '_config.scss';
+@import '_utilities.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+
+.blog-section {
+    .row {
+        .first-col {
+            .row {
+                img {
+                    height: 500px;
+                    object-fit: cover;
+                    margin-bottom: 2em;
+                }
+
+                h2 {
+                    margin-bottom: .5em;
+                    font-weight: 600;
+                }
+
+                p.date {
+                    color: gray;
+                    margin-bottom: 2em;
+                    span {
+                        margin-left: 1.3em;
+                    }
+                    i {
+                        color: $color-one;
+                    }
+                }
+
+                p.desc {
+                    color: gray;
+                    font-size: .9rem;
+                    font-weight: 600;
+                    line-height: 1.8;
+                    margin-bottom: 3em;
+                }
+
+                blockquote {
+                    color: gray;
+                    margin-top: .3em;
+                    font-size: 1.5rem;
+                }
+
+                footer.blockquote-footer {
+                    margin-left: 2em;
+                    margin-bottom: 5em;
+                    span.block-name {
+                        color: #000;
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                    }
+
+                    span.block-title {
+                        color: $color-one;
+                        font-weight: 600;
+                    }
+                }
+
+
+                .second-img {
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 3em;
+                }
+
+
+                // SHARE BTNS
+
+                .share-buttons {
+                    margin-bottom: 4em;
+                    padding-bottom: 2em;
+                    border-bottom: 3px solid ghostwhite;
+                    button {
+                        padding: .7em 1.8em;
+                        margin-right: .7em;
+                    }
+
+                    .f-share {
+                        background-color: #4B6CD0;
+                        color: #fff;
+                    }
+
+                    .t-share {
+                        background-color: #49A7F3;
+                        color: #fff;
+                    }
+
+                    .g-share {
+                        background-color: #D34836;
+                        color: #fff;
+                    }
+
+                    .p-share {
+                        background-color: #BD081C;
+                        color: #fff;
+                    }
+                }
+
+
+
+                // COMMENT SECTION 
+
+                .comments-section {
+                    h3 {
+                        font-size: 1.3rem;
+                        margin-bottom: 1.5em;
+                    }
+
+                    .first-col,
+                    .second-col,
+                    .third-col {
+                        .object-media {
+                            background-color: #F4F4F4;
+                            padding: 2em;
+                            // width: 800px;
+                            img {
+                                width: 70px;
+                                object-fit: cover;
+                                border-radius: 50%;
+                                height: 70px;
+                            }
+
+
+                            .object-body {
+                                p.name {
+                                    font-weight: 600;
+                                    font-size: 1.1rem;
+                                    span.date {
+                                        font-weight: 400;
+                                        font-size: .8rem;
+                                        color: gray;
+                                    }
+                                }
+
+
+                                p.content {
+                                    color: gray;
+                                }
+
+                                p.reply {
+                                    a {
+                                        text-transform: uppercase;
+                                        letter-spacing: 1;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .first-col {
+                        .object-media {
+                            margin-bottom: 2em;
+                        }
+                    }
+
+                    .second-col {
+                        margin-top: 0;
+                        
+                        margin-left: 3.4em;
+                    }
+
+                    .third-col {
+                        border-bottom: 1px solid lightgrey;
+                        margin-bottom: 3em;
+                    }
+                }
+
+
+
+
+                // REPLY FORM 
+
+                .leave-a-reply {
+                    input {
+                        margin-bottom: 2.5em;
+                    }
+
+                    textarea {
+                        margin-bottom: 2em;
+                    }
+
+                    button {
+                        background-color: $color-one;
+                        color: #fff;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        margin-bottom: 4em;
+                        padding: .7em 4em;
+                        border: 2px solid $color-one;
+
+                        &:hover {
+                            background-color: #fff;
+                            color: $color-one;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+    // SHARE BTNS
+
+    .share-buttons {
+        margin-bottom: 4em;
+        padding-bottom: 2em;
+        border-bottom: 3px solid ghostwhite;
+        button {
+            padding: .3em .8em !important;
+            margin-right: .7em;
+        }
+
+        .f-share {
+            background-color: #4B6CD0;
+            color: #fff;
+        }
+
+        .t-share {
+            background-color: #49A7F3;
+            color: #fff;
+        }
+
+        .g-share {
+            background-color: #D34836;
+            color: #fff;
+        }
+
+        .p-share {
+            background-color: #BD081C;
+            color: #fff;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (min-width:270px) and (max-width: 575px) {
+    .blog-section {
+        .row {
+            .first-col {
+                .row {
+                    img {
+                        height: 500px;
+                        object-fit: cover;
+                        margin-bottom: 2em;
+                    }
+    
+                    h2 {
+                        margin-bottom: .5em;
+                        font-weight: 600;
+                    }
+    
+                    p.date {
+                        color: gray;
+                        margin-bottom: 2em;
+                        span {
+                            margin-left: 1.3em;
+                        }
+                        i {
+                            color: $color-one;
+                        }
+                    }
+    
+                    p.desc {
+                        color: gray;
+                        font-size: .9rem;
+                        font-weight: 600;
+                        line-height: 1.8;
+                        margin-bottom: 3em;
+                    }
+    
+                    blockquote {
+                        color: gray;
+                        margin-top: .3em;
+                        font-size: 1.5rem;
+                    }
+    
+                    footer.blockquote-footer {
+                        margin-left: 2em;
+                        margin-bottom: 5em;
+                        span.block-name {
+                            color: #000;
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                        }
+    
+                        span.block-title {
+                            color: $color-one;
+                            font-weight: 600;
+                        }
+                    }
+    
+    
+                    .second-img {
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 3em;
+                    }
+    
+    
+                    // SHARE BTNS
+    
+                    .share-buttons {
+                        margin-bottom: 4em;
+                        padding-bottom: 2em;
+                        border-bottom: 3px solid ghostwhite;
+                        button {
+                            padding: .3em .8em !important;
+                            margin-right: .7em;
+                            margin-bottom: 1em;
+                        }
+    
+                        .f-share {
+                            background-color: #4B6CD0;
+                            color: #fff;
+                        }
+    
+                        .t-share {
+                            background-color: #49A7F3;
+                            color: #fff;
+                        }
+    
+                        .g-share {
+                            background-color: #D34836;
+                            color: #fff;
+                        }
+    
+                        .p-share {
+                            background-color: #BD081C;
+                            color: #fff;
+                        }
+                    }
+    
+    
+    
+                    // COMMENT SECTION 
+    
+                    .comments-section {
+                        h3 {
+                            font-size: 1.3rem;
+                            margin-bottom: 1.5em;
+                        }
+    
+                        .first-col,
+                        .second-col,
+                        .third-col {
+                            
+                            .object-media {
+                                background-color: #F4F4F4;
+                                padding: 2em;
+                                
+                                // width: 800px;
+                                img {
+                                    width: 70px;
+                                    object-fit: cover;
+                                    border-radius: 50%;
+                                    height: 70px;
+                                }
+    
+    
+                                .object-body {
+                                    p.name {
+                                        font-weight: 600;
+                                        font-size: 1.1rem;
+                                        span.date {
+                                            font-weight: 400;
+                                            font-size: .8rem;
+                                            color: gray;
+                                        }
+                                    }
+    
+    
+                                    p.content {
+                                        color: gray;
+                                    }
+    
+                                    p.reply {
+                                        a {
+                                            text-transform: uppercase;
+                                            letter-spacing: 1;
+                                            font-weight: 600;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        .first-col {
+                            .object-media {
+                                margin-bottom: 2em;
+                            }
+                        }
+    
+                        .second-col {
+                            margin-top: 0;
+                            
+                            margin-left:0;
+                        }
+    
+                        .third-col {
+                            border-bottom: 1px solid lightgrey;
+                            margin-bottom: 3em;
+                        }
+                    }
+    
+    
+    
+    
+                    // REPLY FORM 
+    
+                    .leave-a-reply {
+                        input {
+                            margin-bottom: 2.5em;
+                        }
+    
+                        textarea {
+                            margin-bottom: 2em;
+                        }
+    
+                        button {
+                            background-color: $color-one;
+                            color: #fff;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            margin-bottom: 4em;
+                            padding: .7em 4em;
+                            border: 2px solid $color-one;
+    
+                            &:hover {
+                                background-color: #fff;
+                                color: $color-one;
+                            }
+                        }
+                    }
+    
+    
+                }
+            }
+        }
+    }
+}

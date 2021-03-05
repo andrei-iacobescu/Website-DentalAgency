@@ -1,0 +1,96 @@
+@import '_config.scss';
+@import '_utilities.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+li, button, a {
+    font-weight: 600;
+}
+
+.container {
+    .row {
+        
+        .first-col {
+            margin-bottom: 5em;
+            iframe {
+                display: block;
+                margin: 0 auto;
+                
+            }
+        }
+
+
+        .second-col {
+            margin-bottom: 5em;
+            .address-col {
+                background-color: $color-one;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 3em;
+                padding-right: 3em;
+                h3 {
+                    margin-bottom: .5em;
+                    font-weight: 600;
+                }
+
+                p {
+                    margin-bottom: 1em;
+                    font-size: .9rem;
+                }
+            }
+
+
+            .touch-col {
+                h3 {
+                    font-weight: 600;
+                    font-size: 2.3rem;
+                    margin-bottom: 1.4em;
+                }
+
+                h3::after {
+                    content: "";
+                    background-color: $color-one;
+                    // margin: 0 auto;
+                    width: 70px;
+                    height: 4px;
+                    display: block;
+                    margin-top: .7em;
+                }
+
+                input {
+                    margin-bottom: 2em;
+                }
+
+                textarea {
+                    margin-bottom: 1em;
+                }
+
+                button {
+                    background-color: $color-one;
+                    color: #fff;
+                    font-weight: 600;
+                    padding: .6em 1.5em;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 520px) and (max-width: 991px) {
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+@media (min-width: 270px) and (max-width: 519px) {
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+}

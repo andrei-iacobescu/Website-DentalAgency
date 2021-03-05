@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+.active {
+  color: #00AEEF !important;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+li, button, a, h2, h3 {
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  transition: .3s;
+}
+
+a:hover {
+  color: #00AEEF;
+  transition: .3s;
+}
+
+.wrapper {
+  height: 700px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-carousel-1.jpg");
+  /* The least supported option. */
+}
+
+.wrapper-2 {
+  height: 700px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-carousel-2.jpg");
+  /* The least supported option. */
+}
+
+.wrapper-3 {
+  height: 600px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-wrapper-3.jpg");
+  /* The least supported option. */
+}
+
+.wrapper-4 {
+  height: 700px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-wrapper-4.jpg");
+  /* The least supported option. */
+  background-position: center;
+}
+
+.wrapper-5 {
+  height: 400px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-wrapper-4.jpg");
+  /* The least supported option. */
+  background-position: center;
+}
+
+.wrapper-6 {
+  height: auto;
+  width: 100%;
+  padding-bottom: 1em;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-wrapper-4.jpg");
+  /* The least supported option. */
+  background-position: center;
+}
+
+.banner {
+  height: 200px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-carousel-1.jpg");
+  /* The least supported option. */
+  margin-bottom: 5em;
+  position: relative;
+}
+
+.banner h1 {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  height: 55px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blog-section .row .first-col .row img {
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 2em;
+}
+
+.blog-section .row .first-col .row h2 {
+  margin-bottom: .5em;
+  font-weight: 600;
+}
+
+.blog-section .row .first-col .row p.date {
+  color: gray;
+  margin-bottom: 2em;
+}
+
+.blog-section .row .first-col .row p.date span {
+  margin-left: 1.3em;
+}
+
+.blog-section .row .first-col .row p.date i {
+  color: #00AEEF;
+}
+
+.blog-section .row .first-col .row p.desc {
+  color: gray;
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.8;
+  margin-bottom: 3em;
+}
+
+.blog-section .row .first-col .row blockquote {
+  color: gray;
+  margin-top: .3em;
+  font-size: 1.5rem;
+}
+
+.blog-section .row .first-col .row footer.blockquote-footer {
+  margin-left: 2em;
+  margin-bottom: 5em;
+}
+
+.blog-section .row .first-col .row footer.blockquote-footer span.block-name {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.blog-section .row .first-col .row footer.blockquote-footer span.block-title {
+  color: #00AEEF;
+  font-weight: 600;
+}
+
+.blog-section .row .first-col .row .second-img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
+
+.blog-section .row .first-col .row .share-buttons {
+  margin-bottom: 4em;
+  padding-bottom: 2em;
+  border-bottom: 3px solid ghostwhite;
+}
+
+.blog-section .row .first-col .row .share-buttons button {
+  padding: .7em 1.8em;
+  margin-right: .7em;
+}
+
+.blog-section .row .first-col .row .share-buttons .f-share {
+  background-color: #4B6CD0;
+  color: #fff;
+}
+
+.blog-section .row .first-col .row .share-buttons .t-share {
+  background-color: #49A7F3;
+  color: #fff;
+}
+
+.blog-section .row .first-col .row .share-buttons .g-share {
+  background-color: #D34836;
+  color: #fff;
+}
+
+.blog-section .row .first-col .row .share-buttons .p-share {
+  background-color: #BD081C;
+  color: #fff;
+}
+
+.blog-section .row .first-col .row .comments-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5em;
+}
+
+.blog-section .row .first-col .row .comments-section .first-col .object-media,
+.blog-section .row .first-col .row .comments-section .second-col .object-media,
+.blog-section .row .first-col .row .comments-section .third-col .object-media {
+  background-color: #F4F4F4;
+  padding: 2em;
+}
+
+.blog-section .row .first-col .row .comments-section .first-col .object-media img,
+.blog-section .row .first-col .row .comments-section .second-col .object-media img,
+.blog-section .row .first-col .row .comments-section .third-col .object-media img {
+  width: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 70px;
+}
+
+.blog-section .row .first-col .row .comments-section .first-col .object-media .object-body p.name,
+.blog-section .row .first-col .row .comments-section .second-col .object-media .object-body p.name,
+.blog-section .row .first-col .row .comments-section .third-col .object-media .object-body p.name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.blog-section .row .first-col .row .comments-section .first-col .object-media .object-body p.name span.date,
+.blog-section .row .first-col .row .comments-section .second-col .object-media .object-body p.name span.date,
+.blog-section .row .first-col .row .comments-section .third-col .object-media .object-body p.name span.date {
+  font-weight: 400;
+  font-size: .8rem;
+  color: gray;
+}
+
+.blog-section .row .first-col .row .comments-section .first-col .object-media .object-body p.content,
+.blog-section .row .first-col .row .comments-section .second-col .object-media .object-body p.content,
+.blog-section .row .first-col .row .comments-section .third-col .object-media .object-body p.content {
+  color: gray;
+}
+
+.blog-section .row .first-col .row .comments-section .first-col .object-media .object-body p.reply a,
+.blog-section .row .first-col .row .comments-section .second-col .object-media .object-body p.reply a,
+.blog-section .row .first-col .row .comments-section .third-col .object-media .object-body p.reply a {
+  text-transform: uppercase;
+  letter-spacing: 1;
+  font-weight: 600;
+}
+
+.blog-section .row .first-col .row .comments-section .first-col .object-media {
+  margin-bottom: 2em;
+}
+
+.blog-section .row .first-col .row .comments-section .second-col {
+  margin-top: 0;
+  margin-left: 3.4em;
+}
+
+.blog-section .row .first-col .row .comments-section .third-col {
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 3em;
+}
+
+.blog-section .row .first-col .row .leave-a-reply input {
+  margin-bottom: 2.5em;
+}
+
+.blog-section .row .first-col .row .leave-a-reply textarea {
+  margin-bottom: 2em;
+}
+
+.blog-section .row .first-col .row .leave-a-reply button {
+  background-color: #00AEEF;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 4em;
+  padding: .7em 4em;
+  border: 2px solid #00AEEF;
+}
+
+.blog-section .row .first-col .row .leave-a-reply button:hover {
+  background-color: #fff;
+  color: #00AEEF;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .share-buttons {
+    margin-bottom: 4em;
+    padding-bottom: 2em;
+    border-bottom: 3px solid ghostwhite;
+  }
+  .share-buttons button {
+    padding: .3em .8em !important;
+    margin-right: .7em;
+  }
+  .share-buttons .f-share {
+    background-color: #4B6CD0;
+    color: #fff;
+  }
+  .share-buttons .t-share {
+    background-color: #49A7F3;
+    color: #fff;
+  }
+  .share-buttons .g-share {
+    background-color: #D34836;
+    color: #fff;
+  }
+  .share-buttons .p-share {
+    background-color: #BD081C;
+    color: #fff;
+  }
+}
+
+@media (min-width: 270px) and (max-width: 575px) {
+  .blog-section .row .first-col .row img {
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 2em;
+  }
+  .blog-section .row .first-col .row h2 {
+    margin-bottom: .5em;
+    font-weight: 600;
+  }
+  .blog-section .row .first-col .row p.date {
+    color: gray;
+    margin-bottom: 2em;
+  }
+  .blog-section .row .first-col .row p.date span {
+    margin-left: 1.3em;
+  }
+  .blog-section .row .first-col .row p.date i {
+    color: #00AEEF;
+  }
+  .blog-section .row .first-col .row p.desc {
+    color: gray;
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 1.8;
+    margin-bottom: 3em;
+  }
+  .blog-section .row .first-col .row blockquote {
+    color: gray;
+    margin-top: .3em;
+    font-size: 1.5rem;
+  }
+  .blog-section .row .first-col .row footer.blockquote-footer {
+    margin-left: 2em;
+    margin-bottom: 5em;
+  }
+  .blog-section .row .first-col .row footer.blockquote-footer span.block-name {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .blog-section .row .first-col .row footer.blockquote-footer span.block-title {
+    color: #00AEEF;
+    font-weight: 600;
+  }
+  .blog-section .row .first-col .row .second-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3em;
+  }
+  .blog-section .row .first-col .row .share-buttons {
+    margin-bottom: 4em;
+    padding-bottom: 2em;
+    border-bottom: 3px solid ghostwhite;
+  }
+  .blog-section .row .first-col .row .share-buttons button {
+    padding: .3em .8em !important;
+    margin-right: .7em;
+    margin-bottom: 1em;
+  }
+  .blog-section .row .first-col .row .share-buttons .f-share {
+    background-color: #4B6CD0;
+    color: #fff;
+  }
+  .blog-section .row .first-col .row .share-buttons .t-share {
+    background-color: #49A7F3;
+    color: #fff;
+  }
+  .blog-section .row .first-col .row .share-buttons .g-share {
+    background-color: #D34836;
+    color: #fff;
+  }
+  .blog-section .row .first-col .row .share-buttons .p-share {
+    background-color: #BD081C;
+    color: #fff;
+  }
+  .blog-section .row .first-col .row .comments-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5em;
+  }
+  .blog-section .row .first-col .row .comments-section .first-col .object-media,
+  .blog-section .row .first-col .row .comments-section .second-col .object-media,
+  .blog-section .row .first-col .row .comments-section .third-col .object-media {
+    background-color: #F4F4F4;
+    padding: 2em;
+  }
+  .blog-section .row .first-col .row .comments-section .first-col .object-media img,
+  .blog-section .row .first-col .row .comments-section .second-col .object-media img,
+  .blog-section .row .first-col .row .comments-section .third-col .object-media img {
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 70px;
+  }
+  .blog-section .row .first-col .row .comments-section .first-col .object-media .object-body p.name,
+  .blog-section .row .first-col .row .comments-section .second-col .object-media .object-body p.name,
+  .blog-section .row .first-col .row .comments-section .third-col .object-media .object-body p.name {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .blog-section .row .first-col .row .comments-section .first-col .object-media .object-body p.name span.date,
+  .blog-section .row .first-col .row .comments-section .second-col .object-media .object-body p.name span.date,
+  .blog-section .row .first-col .row .comments-section .third-col .object-media .object-body p.name span.date {
+    font-weight: 400;
+    font-size: .8rem;
+    color: gray;
+  }
+  .blog-section .row .first-col .row .comments-section .first-col .object-media .object-body p.content,
+  .blog-section .row .first-col .row .comments-section .second-col .object-media .object-body p.content,
+  .blog-section .row .first-col .row .comments-section .third-col .object-media .object-body p.content {
+    color: gray;
+  }
+  .blog-section .row .first-col .row .comments-section .first-col .object-media .object-body p.reply a,
+  .blog-section .row .first-col .row .comments-section .second-col .object-media .object-body p.reply a,
+  .blog-section .row .first-col .row .comments-section .third-col .object-media .object-body p.reply a {
+    text-transform: uppercase;
+    letter-spacing: 1;
+    font-weight: 600;
+  }
+  .blog-section .row .first-col .row .comments-section .first-col .object-media {
+    margin-bottom: 2em;
+  }
+  .blog-section .row .first-col .row .comments-section .second-col {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .blog-section .row .first-col .row .comments-section .third-col {
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 3em;
+  }
+  .blog-section .row .first-col .row .leave-a-reply input {
+    margin-bottom: 2.5em;
+  }
+  .blog-section .row .first-col .row .leave-a-reply textarea {
+    margin-bottom: 2em;
+  }
+  .blog-section .row .first-col .row .leave-a-reply button {
+    background-color: #00AEEF;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 4em;
+    padding: .7em 4em;
+    border: 2px solid #00AEEF;
+  }
+  .blog-section .row .first-col .row .leave-a-reply button:hover {
+    background-color: #fff;
+    color: #00AEEF;
+  }
+}

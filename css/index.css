@@ -1,0 +1,1704 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+.active {
+  color: #00AEEF !important;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+li, button, a, h2, h3 {
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  transition: .3s;
+}
+
+a:hover {
+  color: #00AEEF;
+  transition: .3s;
+}
+
+.wrapper {
+  height: 700px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("/images/pic-carousel-1.jpg");
+  /* The least supported option. */
+}
+
+.wrapper-2 {
+  height: 700px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("/images/pic-carousel-2.jpg");
+  /* The least supported option. */
+}
+
+.wrapper-3 {
+  height: 600px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("/images/pic-wrapper-3.jpg");
+  /* The least supported option. */
+}
+
+.wrapper-4 {
+  height: 700px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("/images/pic-wrapper-4.jpg");
+  /* The least supported option. */
+  background-position: center;
+}
+
+.wrapper-5 {
+  height: 400px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("/images/pic-wrapper-4.jpg");
+  /* The least supported option. */
+  background-position: center;
+}
+
+.wrapper-6 {
+  height: auto;
+  width: 100%;
+  padding-bottom: 1em;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("/images/pic-wrapper-4.jpg");
+  /* The least supported option. */
+  background-position: center;
+}
+
+.banner {
+  height: 200px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("/images/pic-carousel-1.jpg");
+  /* The least supported option. */
+  margin-bottom: 5em;
+  position: relative;
+}
+
+.banner h1 {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  height: 55px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.address-bar {
+  background-color: #F4F4F4;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.address-bar .container i {
+  color: #00AEEF;
+  font-size: .8rem;
+}
+
+.address-bar .container span {
+  color: gray;
+  font-size: .8rem;
+}
+
+.address-bar .container .social-media i {
+  color: #707070;
+  padding-right: .3em;
+  padding-left: .3em;
+  transition: .3s;
+}
+
+.address-bar .container .social-media i:hover {
+  cursor: pointer;
+  color: #00AEEF;
+  transition: .3s;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 0;
+  filter: drop-shadow(0px 1px 1px darkgrey);
+}
+
+.navbar .container img {
+  width: 150px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.navbar .container div.collapse {
+  justify-content: center;
+}
+
+.navbar .container ul.navbar-nav {
+  justify-content: end;
+}
+
+.navbar .container ul.navbar-nav li.nav-item {
+  padding-left: .9em;
+  padding-right: .9em;
+}
+
+.navbar .container ul.navbar-nav li.nav-item a.nav-link {
+  text-transform: uppercase;
+  color: #000;
+  font-size: .95rem;
+}
+
+.navbar .container ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: #00AEEF;
+}
+
+.navbar .container ul.navbar-nav ul.dropdown-menu li a.dropdown-item {
+  font-size: .85rem;
+  border-bottom: solid 1px #f8f5f5;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  transition: .4s;
+}
+
+.navbar .container ul.navbar-nav ul.dropdown-menu li a.dropdown-item:hover {
+  color: #00AEEF;
+  transition: .4s;
+}
+
+.navbar .container .booking-nav {
+  margin-right: 3em;
+}
+
+.navbar .container .booking-nav button {
+  background-color: #00AEEF;
+  color: #fff;
+  font-size: .9rem;
+  width: 150px;
+  padding: .7em .5em;
+  border: 3px solid #00AEEF;
+  transition: .4s;
+}
+
+.navbar .container .booking-nav button:hover {
+  background-color: #fff;
+  color: #00AEEF;
+  border: 2.5px solid #00AEEF;
+  transition: .4s;
+}
+
+.owl-carousel {
+  position: relative;
+  margin-bottom: 5em;
+}
+
+.owl-carousel .wrapper, .owl-carousel .wrapper-2 {
+  height: 830px;
+  object-fit: cover;
+}
+
+.owl-carousel .banner-content {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  width: 1000px;
+  height: 300px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: #fff;
+}
+
+.owl-carousel .banner-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: .8em;
+  line-height: 1.5;
+}
+
+.owl-carousel .banner-content p {
+  font-weight: 300;
+  letter-spacing: 1.1;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.owl-carousel .banner-content .buttons {
+  margin-top: 2em;
+}
+
+.owl-carousel .banner-content .buttons .btn.get-started {
+  background-color: #00AEEF;
+  color: #fff;
+  margin-right: 1em;
+  padding: .6em 2em;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 2px solid #00AEEF;
+}
+
+.owl-carousel .banner-content .buttons .btn.get-started:hover {
+  background-color: transparent;
+  color: #00AEEF;
+  border: 2px solid #00AEEF;
+}
+
+.owl-carousel .banner-content .buttons .btn.contact-us {
+  background-color: transparent;
+  border: 2px solid #00AEEF;
+  color: #00AEEF;
+  padding: .6em 2em;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+section#about-us {
+  margin-bottom: 7em;
+  padding-bottom: 6em;
+  border-bottom: 1px solid lightgrey;
+}
+
+section#about-us .container .row .about-img {
+  height: 600px;
+  object-fit: cover;
+}
+
+section#about-us .container .row h2 {
+  margin-bottom: 1.6em;
+  font-size: 2.6rem;
+}
+
+section#about-us .container .row h2::after {
+  content: "";
+  background-color: #00AEEF;
+  width: 70px;
+  height: 4px;
+  display: block;
+  margin-top: .7em;
+}
+
+section#about-us .container .row .about-content {
+  margin-bottom: 3em;
+  color: #707070;
+  font-weight: 400;
+}
+
+section#about-us .container .row .about-col {
+  align-self: center;
+}
+
+section#about-us .container .row .about-bars .bar-wrapper p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+section#about-us .container .row .about-bars .bar-wrapper .bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 1px;
+  background-color: lightgrey;
+  margin-bottom: 1.4em;
+}
+
+section#about-us .container .row .about-bars .bar-wrapper .bar::after {
+  content: "";
+  width: 80%;
+  height: 10px;
+  border-radius: 1px;
+  background-color: #00AEEF;
+  display: block;
+}
+
+section#about-us .container .row .about-bars .bar-wrapper .bar-1::after {
+  width: 80%;
+}
+
+section#about-us .container .row .about-bars .bar-wrapper .bar-2::after {
+  width: 65%;
+}
+
+section#about-us .container .row .about-bars .bar-wrapper .bar-3::after {
+  width: 85%;
+}
+
+section#fact-counter {
+  margin-bottom: 10em;
+}
+
+section#fact-counter .container .row {
+  justify-content: center;
+}
+
+section#fact-counter .container .row div {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
+  width: 250px;
+}
+
+section#fact-counter .container .row div i {
+  color: #00AEEF;
+  font-size: 3rem;
+  margin-bottom: .3em;
+}
+
+section#fact-counter .container .row div p {
+  margin-bottom: .5em;
+}
+
+section#fact-counter .container .row div span {
+  font-size: 2rem;
+  margin-bottom: .3em;
+  text-align: center;
+}
+
+section#our-services {
+  margin-bottom: 5em;
+}
+
+section#our-services .wrapper-3 .container .row h2 {
+  color: #fff;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+section#our-services .wrapper-3 .container .row h2::after {
+  content: "";
+  background-color: #00AEEF;
+  width: 70px;
+  height: 4px;
+  display: block;
+  margin-top: .7em;
+}
+
+section#our-services .wrapper-3 .container .row .first-col .service {
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+section#our-services .wrapper-3 .container .row .first-col .service:hover a {
+  color: #00AEEF;
+  cursor: default;
+}
+
+section#our-services .wrapper-3 .container .row .first-col .service i {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+section#our-services .wrapper-3 .container .row .first-col .service a {
+  color: #fff;
+}
+
+section#pricing {
+  margin-bottom: 5em;
+}
+
+section#pricing .container h2 {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+section#pricing .container h2::after {
+  content: "";
+  background-color: #00AEEF;
+  margin: 0 auto;
+  width: 70px;
+  height: 4px;
+  display: block;
+  margin-top: .7em;
+}
+
+section#pricing .container table {
+  margin-bottom: 5em;
+}
+
+section#pricing .container table thead th {
+  background-color: #00AEEF;
+  color: #fff;
+  border-right: 5px solid #fff;
+}
+
+section#pricing .container table thead th.first {
+  border-right: 5px solid #fff;
+}
+
+section#pricing .container table td, section#pricing .container table th {
+  background-color: #f4f4f4;
+  color: grey;
+  border-right: 5px solid #fff;
+  border-bottom: 4px solid #fff;
+  padding: .7em;
+  padding-left: 2em;
+}
+
+section#pricing .container .read-more {
+  background-color: #00AEEF;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  text-transform: uppercase;
+  padding: .6em 1.6em;
+  border: 2px solid #00AEEF;
+}
+
+section#pricing .container .read-more:hover {
+  background-color: transparent;
+  color: #00AEEF;
+}
+
+section#appointment {
+  margin-bottom: 5em;
+}
+
+section#appointment .wrapper-4 .container h2 {
+  text-align: center;
+  color: #fff;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+section#appointment .wrapper-4 .container h2::after {
+  content: "";
+  background-color: #00AEEF;
+  margin: 0 auto;
+  width: 70px;
+  height: 4px;
+  display: block;
+  margin-top: .7em;
+}
+
+section#appointment .wrapper-4 .container input, section#appointment .wrapper-4 .container select, section#appointment .wrapper-4 .container textarea {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  font-weight: 100;
+  color: gray;
+}
+
+section#appointment .wrapper-4 .container input, section#appointment .wrapper-4 .container select {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+section#appointment .wrapper-4 .container .book-now {
+  background-color: #00AEEF;
+  color: #fff;
+  text-transform: uppercase;
+  padding: .8em 2em;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5em;
+  border: 2px solid #00AEEF;
+}
+
+section#appointment .wrapper-4 .container .book-now:hover {
+  background-color: transparent;
+  color: #00AEEF;
+  border: 2px solid #00AEEF;
+}
+
+section#dentists {
+  margin-bottom: 10em;
+}
+
+section#dentists .container h2 {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+section#dentists .container h2::after {
+  content: "";
+  background-color: #00AEEF;
+  margin: 0 auto;
+  width: 70px;
+  height: 4px;
+  display: block;
+  margin-top: .7em;
+}
+
+section#dentists .container .row div .card {
+  width: 350px;
+}
+
+section#dentists .container .row div .card:hover .card-media {
+  display: block;
+  transition: .4s;
+}
+
+section#dentists .container .row div .card img {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+}
+
+section#dentists .container .row div .card .card-media {
+  display: none;
+  position: absolute;
+  bottom: 100px;
+  left: 97px;
+  transition: .4s;
+}
+
+section#dentists .container .row div .card .card-media i {
+  background-color: #00AEEF;
+  color: #fff;
+  border-radius: 10px;
+  padding: .5em;
+  margin: 0 .5em;
+  transition: .4s;
+}
+
+section#dentists .container .row div .card .card-media i:hover {
+  background-color: #fff;
+  color: #00AEEF;
+  cursor: pointer;
+  transition: .4s;
+}
+
+section#dentists .container .row div .card .card-media .fa-facebook-f {
+  padding-left: .8em;
+  padding-right: .8em;
+}
+
+section#dentists .container .row div .card .card-media .fa-twitter {
+  padding-left: .6em;
+  padding-right: .6em;
+}
+
+section#dentists .container .row div .card-body {
+  text-align: center;
+  background: linear-gradient(rgba(72, 93, 114, 0.8), rgba(35, 36, 73, 0.9));
+  position: absolute;
+  bottom: 0;
+  width: 350px;
+  height: 85px;
+}
+
+section#dentists .container .row div .card-body p.card-text {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+section#dentists .container .row div .card-body p.title {
+  color: #fff;
+  font-size: .9rem;
+}
+
+section#testimonial {
+  margin-bottom: 10em;
+}
+
+section#testimonial .wrapper-5 .container .carousel-2:hover {
+  cursor: pointer;
+}
+
+section#testimonial .wrapper-5 .container .carousel-2 .object {
+  display: flex;
+  height: 400px;
+  align-items: center;
+}
+
+section#testimonial .wrapper-5 .container .carousel-2 .object img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+section#testimonial .wrapper-5 .container .carousel-2 .object .object-body {
+  margin-left: 2em;
+  color: #fff;
+}
+
+section#testimonial .wrapper-5 .container .carousel-2 .object .object-body p.quote {
+  font-size: 1.3rem;
+}
+
+section#testimonial .wrapper-5 .container .carousel-2 .object .object-body p.name {
+  margin-bottom: .3em;
+}
+
+section#testimonial .wrapper-5 .container .carousel-2 .object .object-body p.title {
+  font-size: .9rem;
+}
+
+section#latest-news {
+  margin-bottom: 10em;
+}
+
+section#latest-news .container h2 {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+section#latest-news .container h2::after {
+  content: "";
+  background-color: #00AEEF;
+  margin: 0 auto;
+  width: 70px;
+  height: 4px;
+  display: block;
+  margin-top: .7em;
+}
+
+section#latest-news .container .row {
+  justify-content: center;
+}
+
+section#latest-news .container .row .col-xxl-4 {
+  width: 350px;
+  margin-right: 2em;
+}
+
+section#latest-news .container .row img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+
+section#latest-news .container .row .card {
+  width: 350px;
+  border: none;
+  box-shadow: 1px 1px 15px grey;
+}
+
+section#latest-news .container .row .card .card-body .card-title {
+  margin-bottom: 1em;
+}
+
+section#latest-news .container .row .card .card-body .card-text {
+  color: grey;
+  font-size: .9rem;
+  margin-bottom: 2em;
+}
+
+section#latest-news .container .row .card .card-body .media {
+  display: flex;
+  justify-content: space-between;
+  font-size: .9rem;
+  color: gray;
+}
+
+section#latest-news .container .row .card .card-body .media a {
+  color: gray;
+}
+
+section#latest-news .container .row .card .card-body .media i {
+  color: #00AEEF;
+}
+
+footer .wrapper-6 .container .header-row {
+  padding-top: 4em;
+  align-items: center;
+  color: #fff;
+}
+
+footer .wrapper-6 .container .header-row .first-col i {
+  color: #00AEEF;
+  padding-right: .6em;
+}
+
+footer .wrapper-6 .container .header-row img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+footer .wrapper-6 .container .header-row h3 {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 2em;
+}
+
+footer .wrapper-6 .container .header-row a {
+  color: #fff;
+}
+
+footer .wrapper-6 .container .header-row a:hover {
+  color: #00AEEF;
+}
+
+footer .wrapper-6 .container .header-row input {
+  margin: 1em 0;
+}
+
+footer .wrapper-6 .container .header-row .social-media i {
+  padding: .5em;
+}
+
+footer .wrapper-6 .container .header-row .social-media i:hover {
+  color: #00AEEF;
+  cursor: pointer;
+}
+
+footer .wrapper-6 .container .copyright {
+  border-top: 1px solid lightgrey;
+  color: lightgrey;
+  text-align: center;
+  margin-top: 5em;
+  padding-top: 2.5em;
+  font-size: .8rem;
+}
+
+/************************ MEDIA QUERIES ***********************/
+@media (min-width: 1200px) and (max-width: 1399px) {
+  section#latest-news .container .row .col-xxl-4 {
+    width: 300px;
+    margin-right: 2em;
+  }
+  section#latest-news .container .row img {
+    width: 300px;
+  }
+  section#latest-news .container .row .card {
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar .container img.nav-logo {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+  }
+  .navbar .container ul.navbar-nav li.nav-item {
+    padding-left: .4em;
+    padding-right: .4em;
+  }
+  .navbar .container ul.navbar-nav li.nav-item a.nav-link {
+    font-size: .9rem;
+  }
+  .navbar .container .booking-nav {
+    margin-right: 1em;
+  }
+  .owl-carousel {
+    position: relative;
+  }
+  .owl-carousel .wrapper, .owl-carousel .wrapper-2 {
+    height: 830px;
+    object-fit: cover;
+  }
+  .owl-carousel .banner-content {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 1000px;
+    height: 300px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+  }
+  .owl-carousel .banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: .8em;
+    line-height: 1.5;
+  }
+  .owl-carousel .banner-content p {
+    font-weight: 300;
+    letter-spacing: 1.1;
+    font-size: .95rem;
+    line-height: 2;
+  }
+  .owl-carousel .banner-content .buttons {
+    margin-top: 2em;
+  }
+  .owl-carousel .banner-content .buttons .btn.get-started {
+    background-color: #00AEEF;
+    color: #fff;
+    margin-right: 1em;
+    padding: .6em 2em;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 2px solid #00AEEF;
+  }
+  .owl-carousel .banner-content .buttons .btn.get-started:hover {
+    background-color: transparent;
+    color: #00AEEF;
+    border: 2px solid #00AEEF;
+  }
+  .owl-carousel .banner-content .buttons .btn.contact-us {
+    background-color: transparent;
+    border: 2px solid #00AEEF;
+    color: #00AEEF;
+    padding: .6em 2em;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  section#fact-counter .container .row div {
+    width: 230px;
+  }
+  section#dentists .container .row div .card {
+    width: 270px;
+  }
+  section#dentists .container .row div .card img {
+    height: 250px;
+    width: 270px;
+    object-fit: cover;
+  }
+  section#dentists .container .row div .card .card-media {
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    width: 165px;
+    margin: 0 auto;
+    transition: .4s;
+  }
+  section#dentists .container .row div .card .card-media .fa-facebook-f {
+    padding-left: .8em;
+    padding-right: .8em;
+  }
+  section#dentists .container .row div .card .card-media .fa-twitter {
+    padding-left: .6em;
+    padding-right: .6em;
+  }
+  section#dentists .container .row div .card .card-body {
+    width: 270px;
+    height: 85px;
+  }
+  section#latest-news .container .row .col-xxl-4 {
+    width: 280px;
+    margin-right: 2em;
+  }
+  section#latest-news .container .row img {
+    width: 280px;
+  }
+  section#latest-news .container .row .card {
+    width: 280px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar .container img.nav-logo {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+  }
+  .navbar .container .navbar-toggler {
+    order: 3;
+  }
+  .navbar .container .navbar-collapse {
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    box-shadow: 1px 1px 30px grey;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav {
+    background-color: #fff;
+    margin-top: 2em;
+    margin-bottom: 26em;
+    padding-top: 5em;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav li.nav-item {
+    background-color: #F2F4F8;
+    border-bottom: 1px solid #fff;
+    letter-spacing: 0.2;
+    font-size: .9rem;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav ul.dropdown-menu {
+    margin-left: -.86em;
+    width: 300px;
+    border: none;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav ul.dropdown-menu li {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav .dropdown-menu-2 {
+    padding-left: 1.5em;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav .dropdown-menu-3 {
+    padding-left: 3em;
+  }
+  .owl-carousel {
+    position: relative;
+  }
+  .owl-carousel .wrapper, .owl-carousel .wrapper-2 {
+    height: 830px;
+    object-fit: cover;
+  }
+  .owl-carousel .banner-content {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    padding: 0 3em;
+    height: 300px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+  }
+  .owl-carousel .banner-content h1 {
+    font-size: 2.34rem;
+    margin-bottom: .8em;
+    line-height: 1.5;
+  }
+  .owl-carousel .banner-content p {
+    font-weight: 300;
+    letter-spacing: 1.1;
+    font-size: .85rem;
+    line-height: 2;
+  }
+  .owl-carousel .banner-content .buttons {
+    margin-top: 2em;
+  }
+  .owl-carousel .banner-content .buttons .btn.get-started {
+    background-color: #00AEEF;
+    color: #fff;
+    margin-right: 1em;
+    padding: .6em 2em;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 2px solid #00AEEF;
+  }
+  .owl-carousel .banner-content .buttons .btn.get-started:hover {
+    background-color: transparent;
+    color: #00AEEF;
+    border: 2px solid #00AEEF;
+  }
+  .owl-carousel .banner-content .buttons .btn.contact-us {
+    background-color: transparent;
+    border: 2px solid #00AEEF;
+    color: #00AEEF;
+    padding: .6em 2em;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  section#fact-counter .container .row div {
+    margin-bottom: 7em;
+    width: 350px;
+  }
+  section#our-services .wrapper-3 {
+    height: 100%;
+  }
+  section#our-services .wrapper-3 .container .row .second-col iframe {
+    display: block;
+    margin: 0 auto;
+  }
+  section#dentists .container .row div .card {
+    width: 200px;
+  }
+  section#dentists .container .row div .card img {
+    height: 250px;
+    width: 200px;
+    object-fit: cover;
+  }
+  section#dentists .container .row div .card .card-media {
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    width: 165px;
+    margin: 0 auto;
+    transition: .4s;
+  }
+  section#dentists .container .row div .card .card-media .fa-facebook-f {
+    padding-left: .8em;
+    padding-right: .8em;
+  }
+  section#dentists .container .row div .card .card-media .fa-twitter {
+    padding-left: .6em;
+    padding-right: .6em;
+  }
+  section#dentists .container .row div .card .card-body {
+    width: 200px;
+    height: 85px;
+  }
+  section#latest-news {
+    height: 100%;
+    margin-bottom: 0;
+  }
+  section#latest-news .container .row .col-xxl-4 {
+    width: 200px;
+    height: 200px;
+    margin-right: 2em;
+  }
+  section#latest-news .container .row img {
+    width: 200px;
+    height: 200px;
+  }
+  section#latest-news .container .row .card {
+    width: 200px;
+    height: 500px;
+  }
+  footer .wrapper-6 .container .header-row {
+    padding-top: 4em;
+    align-items: center;
+    color: #fff;
+  }
+  footer .wrapper-6 .container .header-row img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+  }
+  footer .wrapper-6 .container .header-row h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 2em;
+  }
+  footer .wrapper-6 .container .header-row a {
+    color: #fff;
+  }
+  footer .wrapper-6 .container .header-row a:hover {
+    color: #00AEEF;
+  }
+  footer .wrapper-6 .container .header-row input {
+    margin: 1em 0;
+  }
+  footer .wrapper-6 .container .header-row .social-media i {
+    padding: .5em;
+  }
+  footer .wrapper-6 .container .header-row .social-media i:hover {
+    color: #00AEEF;
+    cursor: pointer;
+  }
+  footer .wrapper-6 .container .first-col {
+    margin-bottom: 3em;
+  }
+  footer .wrapper-6 .container .copyright {
+    border-top: 1px solid lightgrey;
+    color: lightgrey;
+    text-align: center;
+    margin-top: 5em;
+    padding-top: 2.5em;
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .address-bar {
+    padding-top: .8em;
+    padding-bottom: .8em;
+  }
+  .address-bar .container span {
+    display: none;
+  }
+  .address-bar .container .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .navbar .container img.nav-logo {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+  }
+  .navbar .container .navbar-toggler {
+    order: 3;
+  }
+  .navbar .container .navbar-collapse {
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    box-shadow: 1px 1px 30px grey;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav {
+    background-color: #fff;
+    margin-top: 2em;
+    margin-bottom: 26em;
+    padding-top: 5em;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav li.nav-item {
+    background-color: #F2F4F8;
+    border-bottom: 1px solid #fff;
+    letter-spacing: 0.2;
+    font-size: .9rem;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav ul.dropdown-menu {
+    margin-left: -.86em;
+    width: 300px;
+    border: none;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav ul.dropdown-menu li {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav .dropdown-menu-2 {
+    padding-left: 1.5em;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav .dropdown-menu-3 {
+    padding-left: 3em;
+  }
+  .owl-carousel {
+    position: relative;
+  }
+  .owl-carousel .wrapper, .owl-carousel .wrapper-2 {
+    height: 830px;
+    object-fit: cover;
+  }
+  .owl-carousel .banner-content {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0 1em;
+    color: #fff;
+  }
+  .owl-carousel .banner-content h1 {
+    font-size: 2.1rem;
+    margin-bottom: .8em;
+    line-height: 1.5;
+  }
+  .owl-carousel .banner-content p {
+    font-weight: 300;
+    letter-spacing: 1.1;
+    font-size: .9rem;
+    line-height: 2;
+  }
+  .owl-carousel .banner-content .buttons {
+    margin-top: 2em;
+  }
+  .owl-carousel .banner-content .buttons .btn.get-started {
+    background-color: #00AEEF;
+    color: #fff;
+    margin-right: 1em;
+    padding: .6em 2em;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 2px solid #00AEEF;
+  }
+  .owl-carousel .banner-content .buttons .btn.get-started:hover {
+    background-color: transparent;
+    color: #00AEEF;
+    border: 2px solid #00AEEF;
+  }
+  .owl-carousel .banner-content .buttons .btn.contact-us {
+    background-color: transparent;
+    border: 2px solid #00AEEF;
+    color: #00AEEF;
+    padding: .6em 2em;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  section#about-us .container .row .about-img {
+    height: 600px;
+    object-fit: cover;
+  }
+  section#about-us .container .row h2 {
+    margin-bottom: 1.6em;
+    font-size: 1.7rem;
+  }
+  section#about-us .container .row h2::after {
+    content: "";
+    background-color: #00AEEF;
+    width: 70px;
+    height: 4px;
+    display: block;
+    margin-top: .7em;
+  }
+  section#about-us .container .row .about-content {
+    margin-bottom: 3em;
+    color: #707070;
+    font-weight: 400;
+    font-size: .9rem;
+  }
+  section#about-us .container .row .about-col {
+    align-self: center;
+    margin-top: 5em;
+  }
+  section#about-us .container .row .about-bars .bar-wrapper p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+  section#about-us .container .row .about-bars .bar-wrapper .bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 1px;
+    background-color: lightgrey;
+    margin-bottom: 1.4em;
+  }
+  section#about-us .container .row .about-bars .bar-wrapper .bar::after {
+    content: "";
+    width: 80%;
+    height: 10px;
+    border-radius: 1px;
+    background-color: #00AEEF;
+    display: block;
+  }
+  section#about-us .container .row .about-bars .bar-wrapper .bar-1::after {
+    width: 80%;
+  }
+  section#about-us .container .row .about-bars .bar-wrapper .bar-2::after {
+    width: 65%;
+  }
+  section#about-us .container .row .about-bars .bar-wrapper .bar-3::after {
+    width: 85%;
+  }
+  section#fact-counter .container .row div {
+    margin-bottom: 7em;
+    width: 250px;
+  }
+  section#our-services .wrapper-3 {
+    height: 100%;
+  }
+  section#our-services .wrapper-3 .container .row .second-col iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  section#appointment .wrapper-4 {
+    height: 900px;
+  }
+  section#dentists .container .row div {
+    margin: 1em auto;
+  }
+  section#dentists .container .row div .card {
+    width: 400px;
+  }
+  section#dentists .container .row div .card img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+  }
+  section#dentists .container .row div .card .card-media {
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    width: 165px;
+    margin: 0 auto;
+    transition: .4s;
+  }
+  section#dentists .container .row div .card .card-media .fa-facebook-f {
+    padding-left: .8em;
+    padding-right: .8em;
+  }
+  section#dentists .container .row div .card .card-media .fa-twitter {
+    padding-left: .6em;
+    padding-right: .6em;
+  }
+  section#dentists .container .row div .card .card-body {
+    width: 400px;
+    height: 85px;
+    bottom: -20px;
+  }
+  section#testimonial .wrapper-5 {
+    height: 700px;
+  }
+  section#testimonial .wrapper-5 .container .carousel-2 .object {
+    height: 700px;
+  }
+  section#latest-news {
+    height: 1300px;
+    margin-bottom: 0;
+  }
+  section#latest-news .container .row .col-xxl-4 {
+    width: 200px;
+    height: 200px;
+    margin-right: 2em;
+  }
+  section#latest-news .container .row .third-col {
+    margin-top: 23em;
+  }
+  section#latest-news .container .row img {
+    width: 200px;
+    height: 200px;
+  }
+  section#latest-news .container .row .card {
+    width: 200px;
+    height: 500px;
+  }
+  footer .wrapper-6 .container .header-row {
+    padding-top: 4em;
+    align-items: center;
+    color: #fff;
+  }
+  footer .wrapper-6 .container .header-row img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+  }
+  footer .wrapper-6 .container .header-row h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 2em;
+  }
+  footer .wrapper-6 .container .header-row a {
+    color: #fff;
+  }
+  footer .wrapper-6 .container .header-row a:hover {
+    color: #00AEEF;
+  }
+  footer .wrapper-6 .container .header-row input {
+    margin: 1em 0;
+  }
+  footer .wrapper-6 .container .header-row .social-media i {
+    padding: .5em;
+  }
+  footer .wrapper-6 .container .header-row .social-media i:hover {
+    color: #00AEEF;
+    cursor: pointer;
+  }
+  footer .wrapper-6 .container .first-col {
+    margin-bottom: 3em;
+  }
+  footer .wrapper-6 .container .third-col {
+    margin-bottom: 3em;
+  }
+  footer .wrapper-6 .container .copyright {
+    border-top: 1px solid lightgrey;
+    color: lightgrey;
+    text-align: center;
+    margin-top: 5em;
+    padding-top: 2.5em;
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 230px) and (max-width: 575px) {
+  .address-bar {
+    padding-top: .8em;
+    padding-bottom: .8em;
+  }
+  .address-bar .container span {
+    display: none;
+  }
+  .address-bar .container .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .navbar .container img.nav-logo {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+  }
+  .navbar .container .navbar-toggler {
+    order: 3;
+  }
+  .navbar .container .navbar-collapse {
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    box-shadow: 1px 1px 30px grey;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav {
+    background-color: #fff;
+    margin-top: 2em;
+    margin-bottom: 26em;
+    padding-top: 5em;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav li.nav-item {
+    background-color: #F2F4F8;
+    border-bottom: 1px solid #fff;
+    letter-spacing: 0.2;
+    font-size: .9rem;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav ul.dropdown-menu {
+    margin-left: -.86em;
+    width: 300px;
+    border: none;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav ul.dropdown-menu li {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav .dropdown-menu-2 {
+    padding-left: 1.5em;
+  }
+  .navbar .container .navbar-collapse ul.navbar-nav .dropdown-menu-3 {
+    padding-left: 3em;
+  }
+  .owl-carousel {
+    position: relative;
+  }
+  .owl-carousel .wrapper, .owl-carousel .wrapper-2 {
+    height: 830px;
+    object-fit: cover;
+  }
+  .owl-carousel .banner-content {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0 1em;
+    color: #fff;
+  }
+  .owl-carousel .banner-content h1 {
+    font-size: 2.1rem;
+    margin-bottom: .8em;
+    line-height: 1.5;
+  }
+  .owl-carousel .banner-content p {
+    font-weight: 300;
+    letter-spacing: 1.1;
+    font-size: .9rem;
+    line-height: 2;
+  }
+  .owl-carousel .banner-content .buttons {
+    margin-top: 2em;
+  }
+  .owl-carousel .banner-content .buttons .btn.get-started {
+    background-color: #00AEEF;
+    color: #fff;
+    margin-right: 1em;
+    padding: .6em 2em;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 2px solid #00AEEF;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.3em;
+  }
+  .owl-carousel .banner-content .buttons .btn.get-started:hover {
+    background-color: transparent;
+    color: #00AEEF;
+    border: 2px solid #00AEEF;
+  }
+  .owl-carousel .banner-content .buttons .btn.contact-us {
+    background-color: transparent;
+    border: 2px solid #00AEEF;
+    color: #00AEEF;
+    padding: .6em 2em;
+    font-size: 1rem;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+  }
+  section#about-us .container .row .about-img {
+    height: 600px;
+    object-fit: cover;
+  }
+  section#about-us .container .row h2 {
+    margin-bottom: 1.6em;
+    font-size: 1.7rem;
+  }
+  section#about-us .container .row h2::after {
+    content: "";
+    background-color: #00AEEF;
+    width: 70px;
+    height: 4px;
+    display: block;
+    margin-top: .7em;
+  }
+  section#about-us .container .row .about-content {
+    margin-bottom: 3em;
+    color: #707070;
+    font-weight: 400;
+    font-size: .9rem;
+  }
+  section#about-us .container .row .about-col {
+    align-self: center;
+    margin-top: 5em;
+  }
+  section#about-us .container .row .about-bars .bar-wrapper p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+  section#about-us .container .row .about-bars .bar-wrapper .bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 1px;
+    background-color: lightgrey;
+    margin-bottom: 1.4em;
+  }
+  section#about-us .container .row .about-bars .bar-wrapper .bar::after {
+    content: "";
+    width: 80%;
+    height: 10px;
+    border-radius: 1px;
+    background-color: #00AEEF;
+    display: block;
+  }
+  section#about-us .container .row .about-bars .bar-wrapper .bar-1::after {
+    width: 80%;
+  }
+  section#about-us .container .row .about-bars .bar-wrapper .bar-2::after {
+    width: 65%;
+  }
+  section#about-us .container .row .about-bars .bar-wrapper .bar-3::after {
+    width: 85%;
+  }
+  section#fact-counter .container .row div {
+    margin-bottom: 7em;
+    width: 200px;
+  }
+  section#our-services .wrapper-3 {
+    height: 120%;
+  }
+  section#our-services .wrapper-3 .container .row .second-col iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  section#appointment .wrapper-4 {
+    height: 900px;
+  }
+  section#dentists .container .row div {
+    margin: 1em auto;
+  }
+  section#dentists .container .row div .card {
+    width: 250px;
+  }
+  section#dentists .container .row div .card img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+  }
+  section#dentists .container .row div .card .card-media {
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    width: 165px;
+    margin: 0 auto;
+    transition: .4s;
+  }
+  section#dentists .container .row div .card .card-media .fa-facebook-f {
+    padding-left: .8em;
+    padding-right: .8em;
+  }
+  section#dentists .container .row div .card .card-media .fa-twitter {
+    padding-left: .6em;
+    padding-right: .6em;
+  }
+  section#dentists .container .row div .card .card-body {
+    width: 250px;
+    height: 85px;
+    bottom: -20px;
+  }
+  section#testimonial .wrapper-5 {
+    height: 700px;
+  }
+  section#testimonial .wrapper-5 .container .carousel-2 .object {
+    height: 700px;
+  }
+  section#latest-news .container .row {
+    justify-content: center;
+  }
+  section#latest-news .container .row .col-4 {
+    margin-bottom: 3em;
+  }
+  section#latest-news .container .row img {
+    width: 300px;
+    height: 200px;
+  }
+  section#latest-news .container .row .card {
+    width: 300px;
+    height: 500px;
+    margin-left: 2em;
+  }
+  footer .wrapper-6 .container .header-row {
+    padding-top: 4em;
+    align-items: center;
+    color: #fff;
+  }
+  footer .wrapper-6 .container .header-row img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+  }
+  footer .wrapper-6 .container .header-row h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 2em;
+  }
+  footer .wrapper-6 .container .header-row a {
+    color: #fff;
+  }
+  footer .wrapper-6 .container .header-row a:hover {
+    color: #00AEEF;
+  }
+  footer .wrapper-6 .container .header-row input {
+    margin: 1em 0;
+  }
+  footer .wrapper-6 .container .header-row .social-media i {
+    padding: .5em;
+  }
+  footer .wrapper-6 .container .header-row .social-media i:hover {
+    color: #00AEEF;
+    cursor: pointer;
+  }
+  footer .wrapper-6 .container .first-col {
+    margin-bottom: 3em;
+  }
+  footer .wrapper-6 .container .third-col {
+    margin-bottom: 3em;
+  }
+  footer .wrapper-6 .container .copyright {
+    border-top: 1px solid lightgrey;
+    color: lightgrey;
+    text-align: center;
+    margin-top: 5em;
+    padding-top: 2.5em;
+    font-size: .8rem;
+  }
+}

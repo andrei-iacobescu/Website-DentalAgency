@@ -1,0 +1,57 @@
+@import '_config.scss';
+@import '_utilities.scss';
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+body {
+    font-family: 'Open Sans';
+}
+
+
+
+
+
+
+// Our Services
+
+section#our-services {
+    margin-top: 5em;
+    margin-bottom: 5em;
+        .container {
+            .row {
+                i {
+                    font-size: 2rem;
+                    padding: .7em; 
+                    color: $color-one;
+                    border-radius: 50%;
+                    transition: .4s;
+                    
+                }
+
+                a {
+                    color: #000;
+                    font-weight: 600;
+                }
+
+                p.desc {
+                    color: darkgrey;
+                    
+                }   
+                .service {
+                    text-align: center;
+                    margin-bottom: 3em;
+                    &:hover {
+
+                        i {
+                            background-color: #fff;
+                        padding: .7em;
+                        border-radius: 50%;
+                        box-shadow: 1px 1px 10px darkgrey;
+                        transition: .4s;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    
+}

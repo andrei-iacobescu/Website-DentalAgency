@@ -1,0 +1,2448 @@
+@import './utilities';
+@import './config';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.address-bar {
+    background-color: #F4F4F4;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    .container {
+        i {
+            color: $color-one;
+            font-size: .8rem;
+        }
+
+        span {
+            color: gray;
+            font-size: .8rem;
+        }
+
+        .social-media {
+            i {
+                color: $color-four;
+                padding-right: .3em;
+                padding-left: .3em;
+                transition: .3s;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $color-one;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// MAIN NAV
+
+.navbar {
+    background-color: #fff;
+    padding: 0;
+    
+    filter: drop-shadow(0px 1px 1px darkgrey);
+    .container {
+        
+        img {
+            width: 150px;
+            height: 80px;
+            object-fit: cover;
+        }
+        
+        div.collapse {
+            
+            justify-content: center;
+        }
+
+        ul.navbar-nav {
+            
+            justify-content: end;
+
+            li.nav-item {
+                padding-left: .9em;
+                padding-right: .9em;
+                
+                a.nav-link {
+                    text-transform: uppercase;
+                    color: #000;
+                    font-size: .95rem;
+                    &:hover {
+                        color: $color-one;
+                    }
+                }
+            }
+
+            ul.dropdown-menu {
+                li {
+                    a.dropdown-item {
+                        font-size: .85rem;
+                        border-bottom: solid 1px rgb(248, 245, 245);
+                        padding-top: .5em;
+                        padding-bottom: .5em;
+                        transition: .4s;
+                        &:hover {
+                            color: $color-one;
+                            transition: .4s;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .booking-nav {
+            margin-right: 3em;
+            button {
+                background-color: $color-one;
+                color: #fff;
+                font-size: .9rem;
+                width: 150px;
+                padding: .7em .5em;
+                border: 3px solid $color-one;
+                transition: .4s;
+                &:hover {
+                    background-color: #fff;
+                    color: $color-one;
+                    border: 2.5px solid $color-one;
+                    transition: .4s;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// OWL CAROUSEL 
+
+.owl-carousel {
+    position: relative;
+    margin-bottom: 5em;
+    .wrapper, .wrapper-2 {
+        width: 100%;
+        height: 830px;
+        object-fit: cover;
+       
+    }
+
+    .banner-content {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        width: 1000px;
+        height: 300px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        color: #fff;
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: .8em;
+            line-height: 1.5;
+        }
+        p {
+            font-weight: 300;
+            letter-spacing: 1.1;
+            font-size: 1rem;
+            line-height: 2;
+        }
+
+        .buttons {
+            margin-top: 2em;
+            .btn.get-started {
+                background-color: $color-one;
+                color: #fff;
+                margin-right: 1em;
+                padding: .6em 2em;
+                font-size: 1rem;
+                text-transform: uppercase;
+                border: 2px solid $color-one;
+                &:hover {
+                    background-color: transparent;
+                    color: $color-one;
+                    border: 2px solid $color-one;
+                }
+            }
+
+            .btn.contact-us {
+                background-color: transparent;
+                border: 2px solid $color-one;
+                color: $color-one;
+                padding: .6em 2em;
+                font-size: 1rem;
+                text-transform: uppercase;
+            }
+        }
+
+
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// ABOUT US
+
+section#about-us {
+    margin-bottom: 7em;
+    padding-bottom: 6em;
+    border-bottom: 1px solid lightgrey;
+    .container {
+        
+        .row {
+            
+            .about-img {
+                height: 600px;
+            
+                object-fit: cover;
+            }
+
+            h2 {
+                margin-bottom: 1.6em;
+                font-size: 2.6rem;
+            }
+
+            h2::after {
+                content: "";
+                background-color: $color-one;
+                width: 70px;
+                height: 4px;
+                display: block;
+                margin-top: .7em;
+            }
+
+
+            .about-content {
+                margin-bottom: 3em;
+                color: #707070;
+                font-weight: 400;
+            }
+
+            .about-col {
+                align-self: center;
+            }
+
+
+            .about-bars {
+                .bar-wrapper {
+                    p {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 1.2rem;
+                    }
+
+                    
+
+                    .bar {
+                        width: 100%;
+                        height: 10px;
+                        border-radius: 1px;
+                        background-color: lightgrey;
+                        margin-bottom: 1.4em;
+                    }
+
+                    .bar::after {
+                        content: "";
+                        width: 80%;
+                        height: 10px;
+                        border-radius: 1px;
+                        background-color: $color-one;
+                        display: block;
+                    }
+
+                    .bar-1::after {
+                        width: 80%;
+                    }
+
+                    .bar-2::after {
+                        width: 65%;
+                    }
+
+                    .bar-3::after {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// FACT COUNTER 
+
+section#fact-counter {
+    margin-bottom: 10em;
+    .container {
+        .row {
+            justify-content: center;
+            div {
+                text-align: center;
+                padding-left: 0;
+                padding-right: 0;
+                margin-right: 0;
+                margin-left: 0;
+                width: 250px;
+                
+                i {
+                    color: $color-one;
+                    font-size: 3rem;
+                    margin-bottom: .3em;
+                }
+
+                p {
+                    margin-bottom: .5em;
+                }
+
+                span {
+                    font-size: 2rem;
+                    margin-bottom: .3em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// OUR SERVICES 
+
+section#our-services {
+    margin-bottom: 5em;
+    .wrapper-3 {
+        .container {
+            .row {
+                
+                h2 {
+                    color: #fff;
+                    margin-top: 2em;
+                    margin-bottom: 2em;
+                }
+
+
+                h2::after {
+                    content: "";
+                    background-color: $color-one;
+                    width: 70px;
+                    height: 4px;
+                    display: block;
+                    margin-top: .7em;
+                }
+
+
+
+                .first-col {
+                .service {
+                    margin-bottom: 5em;
+                    text-align: center;
+
+                    &:hover {
+                        a {
+                            color: $color-one;
+                            cursor: default;
+                        }
+                    }
+                    i {
+                        font-size: 2rem;
+                        color: #fff;
+                        margin-bottom: 1em;
+                    }
+
+                    a {
+                        color: #fff;
+                    }
+                }
+                    
+                }
+
+
+
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// PRICING 
+
+section#pricing {
+    margin-bottom: 5em;
+    .container {
+        h2 {
+            text-align: center;
+            margin-bottom: 3em;
+        }
+
+        h2::after {
+            content: "";
+            background-color: $color-one;
+            margin: 0 auto;
+            width: 70px;
+            height: 4px;
+            display: block;
+            margin-top: .7em;
+        }
+
+        table {
+            margin-bottom: 5em;
+            thead {
+                th {
+                    background-color: $color-one;
+                    color: #fff;
+                    border-right: 5px solid #fff;
+                }
+
+                th.first {
+                    border-right: 5px solid #fff;
+                }
+            }
+
+
+            td, th {
+                background-color: #f4f4f4;
+                color: grey;
+                border-right: 5px solid #fff;
+                border-bottom: 4px solid #fff;
+                padding: .7em;
+                padding-left: 2em;
+            }
+        }
+
+
+        .read-more {
+            background-color: $color-one;
+            color: #fff;
+            margin: 0 auto;
+            display: block;
+            text-transform: uppercase;
+            padding: .6em 1.6em;
+            border: 2px solid $color-one;
+
+            &:hover {
+                background-color: transparent;
+                color: $color-one;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// APPOINTMENT
+
+section#appointment {
+    margin-bottom: 5em;
+    .wrapper-4 {
+        
+        .container {
+            h2 {
+                text-align: center;
+                color: #fff;
+                margin-top: 2em;
+                margin-bottom: 3em;
+            }
+
+            h2::after {
+                content: "";
+                background-color: $color-one;
+                margin: 0 auto;
+                width: 70px;
+                height: 4px;
+                display: block;
+                margin-top: .7em;
+            }
+
+            
+
+            input, select, textarea {
+                background-color: rgba(0,0,0, .3);
+                border: none;
+                font-weight: 100;
+                color: gray;
+            }
+
+            input, select {
+                padding: 1em;
+                margin-bottom: 1em;
+            }
+
+
+            .book-now {
+                background-color: $color-one;
+                color: #fff;
+                text-transform: uppercase;
+                padding: .8em 2em;
+                display: block;
+                margin: 0 auto;
+                margin-top: 5em;
+                border: 2px solid $color-one;
+                &:hover {
+                    background-color: transparent;
+                    color: $color-one;
+                    border: 2px solid $color-one;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// OUR DENTISTS
+
+section#dentists {
+    margin-bottom: 10em;
+    .container {
+        h2 {
+            text-align: center;
+            margin-top: 2em;
+            margin-bottom: 3em;
+        }
+
+        h2::after {
+            content: "";
+            background-color: $color-one;
+            margin: 0 auto;
+            width: 70px;
+            height: 4px;
+            display: block;
+            margin-top: .7em;
+        }
+
+        .row {
+            div {
+
+                .card {
+                    width: 350px;
+                    &:hover {
+                        .card-media {
+                            display: block;
+                            transition: .4s;
+                        }
+                    }
+                    img {
+                        height: 350px;
+                        width: 350px;
+                        object-fit: cover;
+                        
+                    }
+
+                    .card-media {
+                        display: none;
+                        position: absolute;
+                        bottom: 100px;
+                        left: 97px;
+                        transition: .4s;
+                        i {
+                            background-color: $color-one;
+                            color: #fff;
+                            border-radius: 10px;
+                            padding: .5em;
+                            margin: 0 .5em;
+                            transition: .4s;
+                            &:hover {
+                                background-color: #fff;
+                                color: $color-one;
+                                cursor: pointer;
+                                transition: .4s;
+                            }
+                        }
+                        .fa-facebook-f {
+                            padding-left: .8em;
+                            padding-right: .8em;
+                        }
+
+                        .fa-twitter {
+                            padding-left: .6em;
+                            padding-right: .6em;
+                        }
+                    }
+
+                }
+
+                .card-body {
+                    text-align: center;
+                    background: -webkit-linear-gradient(rgba(72,93,114, .8),rgba(35,36,73, .9));
+                    background: -moz-linear-gradient(rgba(72,93,114, .8),rgba(35,36,73, .9));
+                    background: linear-gradient(rgba(72,93,114, .8),rgba(35,36,73, .9));
+                    position: absolute;
+                    bottom: 0;
+                    width: 350px;
+                    height: 85px;
+
+                    
+
+                    p.card-text {
+                        color: #fff;
+                        font-size: 1.2rem;
+                        margin-bottom: 0;
+                    }
+
+                    p.title {
+                        color: #fff;
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+
+}
+
+
+
+
+// TESTIMONIALS
+
+section#testimonial {
+    margin-bottom: 10em;
+    .wrapper-5 {
+        .container {
+            .carousel-2 {
+                &:hover {
+                    cursor: pointer;
+                }
+                    .object {
+                        display: flex;
+                        height: 400px;
+                        align-items: center;
+                        img {
+                            width: 200px;
+                            height: 200px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+
+                        .object-body {
+                            margin-left: 2em;
+                            color: #fff;
+
+                            p.quote {
+                                font-size: 1.3rem;
+                            }
+
+                            p.name {
+                                margin-bottom: .3em;
+                            }
+
+                            p.title {
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                
+            }
+        }
+    }
+        
+}
+
+
+
+
+
+
+// LATEST NEWS 
+
+section#latest-news {
+    margin-bottom: 10em;
+    .container {
+        h2 {
+            text-align: center;
+            margin-bottom: 3em;
+        }
+
+        h2::after {
+            content: "";
+            background-color: $color-one;
+            margin: 0 auto;
+            width: 70px;
+            height: 4px;
+            display: block;
+            margin-top: .7em;
+        }
+
+        .row {
+            justify-content: center;
+            .col-xxl-4 {
+                width: 350px;
+                margin-right: 2em;
+            }
+
+            img {
+                width: 350px;
+                height: 300px;
+                object-fit: cover;
+            }
+
+            .card {
+                width: 350px;
+                border: none;
+                box-shadow: 1px 1px 15px grey;
+                .card-body {
+                    
+                    .card-title {
+                        margin-bottom: 1em;
+                        
+                    }
+
+                    .card-text {
+                        color: grey;
+                        font-size: .9rem;
+                        margin-bottom: 2em;
+                    }
+
+                    .media {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: .9rem;
+                        color: gray;
+                        a {
+                            color: gray;
+                        }
+                        i {
+                            color: $color-one;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+// FOOTER
+
+footer {
+    .wrapper-6 {
+        .container {
+            .header-row {
+                padding-top: 4em;
+                align-items: center;
+                .first-col {
+                    i {
+                        color: $color-one;
+                        padding-right: .6em;
+                    }
+                }
+                img {
+                    width: 150px;
+                    height: 100px;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    font-size: 1.4rem;
+                    color: #fff;
+                    margin-bottom: 2em;
+                }
+
+                color: #fff;
+
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        color: $color-one;
+                    }
+                }
+
+
+                input {
+                    margin: 1em 0;
+                }
+
+                .social-media {
+                    i {
+                        padding: .5em;
+
+                        &:hover {
+                            color: $color-one;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+
+            
+
+
+            .copyright {
+                border-top: 1px solid lightgrey;
+                color: lightgrey;
+                text-align: center;
+                margin-top: 5em;
+                padding-top: 2.5em;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+
+
+
+/************************ MEDIA QUERIES ***********************/
+
+
+// XL SCREENS 
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    
+
+
+    // LATEST NEWS 
+
+section#latest-news {
+    .container {
+        .row {
+            
+            .col-xxl-4 {
+                width: 300px;
+                margin-right: 2em;
+            }
+
+            img {
+                width: 300px;
+            }
+
+            .card {
+                width: 300px;
+                
+            }
+        }
+
+    }
+}
+
+
+}
+
+
+// LG SCREENS 
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    // MAIN NAV 
+    .navbar {
+        .container {
+            img.nav-logo {
+                width: 100px;
+                height: 80px;
+                object-fit: cover;
+            }
+
+            ul.navbar-nav {
+                li.nav-item {
+                    padding-left: .4em;
+                    padding-right: .4em;
+
+                    a.nav-link {
+                        font-size: .9rem;
+                    }
+                }
+
+                
+            }
+
+            .booking-nav {
+                margin-right: 1em;
+            }
+        }
+    }
+
+
+
+
+
+
+        // OWL CAROUSEL 
+
+    .owl-carousel {
+        position: relative;
+        
+        .wrapper, .wrapper-2 {
+            height: 830px;
+            object-fit: cover;
+        
+        }
+
+        .banner-content {
+            position: absolute;
+            z-index: 1;
+            text-align: center;
+            width: 1000px;
+            height: 300px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            color: #fff;
+            h1 {
+                font-size: 3rem;
+                margin-bottom: .8em;
+                line-height: 1.5;
+            }
+            p {
+                font-weight: 300;
+                letter-spacing: 1.1;
+                font-size: .95rem;
+                line-height: 2;
+            }
+
+            .buttons {
+                margin-top: 2em;
+                .btn.get-started {
+                    background-color: $color-one;
+                    color: #fff;
+                    margin-right: 1em;
+                    padding: .6em 2em;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    border: 2px solid $color-one;
+                    &:hover {
+                        background-color: transparent;
+                        color: $color-one;
+                        border: 2px solid $color-one;
+                    }
+                }
+
+                .btn.contact-us {
+                    background-color: transparent;
+                    border: 2px solid $color-one;
+                    color: $color-one;
+                    padding: .6em 2em;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                }
+            }
+
+
+            
+        }
+    }
+
+
+
+    // FACT COUNTER 
+
+    section#fact-counter {
+        .container {
+            .row {
+                div {
+                    width: 230px;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+    // OUR DENTISTS
+
+    section#dentists {
+        .container {
+            .row {
+                div {
+                    .card {
+                        width: 270px;
+                        
+                        img {
+                            height: 250px;
+                            width: 270px;
+                            object-fit: cover;
+                        }
+
+                        .card-media {
+                            display: none;
+                            position: absolute;
+                            bottom: 100px;
+                            left: 0;
+                            right: 0;
+                            width: 165px;
+                            margin: 0 auto;
+                            transition: .4s;
+                            
+                            .fa-facebook-f {
+                                padding-left: .8em;
+                                padding-right: .8em;
+                            }
+
+                            .fa-twitter {
+                                padding-left: .6em;
+                                padding-right: .6em;
+                            }
+                        }
+
+
+                        .card-body {
+                            width: 270px;
+                            height: 85px;
+                        }
+                    }
+                }
+
+                    
+            }
+        }
+
+
+    }
+
+
+    // LATEST NEWS 
+
+section#latest-news {
+    .container {
+        .row {
+            
+            .col-xxl-4 {
+                width: 280px;
+                margin-right: 2em;
+            }
+
+            img {
+                width: 280px;
+            }
+
+            .card {
+                width: 280px;
+                
+            }
+        }
+
+    }
+}
+
+
+
+}
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+// MD SCREENS 
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    // MAIN NAV 
+
+    .navbar {
+        .container {
+            img.nav-logo {
+                width: 100px;
+                height: 80px;
+                object-fit: cover;
+            }
+
+            .navbar-toggler {
+                order: 3;
+            }
+
+            .navbar-collapse {
+                background-color: #fff;
+                width: 300px;
+                position: absolute;
+                left: 0;
+                top: 0px;
+                box-shadow: 1px 1px 30px grey;
+
+                ul.navbar-nav {
+                    background-color: #fff;
+                    margin-top: 2em;
+                    margin-bottom: 26em;
+                    padding-top: 5em;
+                    
+                    li.nav-item {
+                        background-color: #F2F4F8;
+                        border-bottom: 1px solid #fff;
+                        letter-spacing: 0.2;
+                        font-size: .9rem;
+                    }
+
+
+                    ul.dropdown-menu {
+                        margin-left: -.86em;
+                        width: 300px;
+                        border: none;
+
+                        li {
+                        animation-name: fade;
+                        animation-duration: 1s;
+                        }
+                    }
+
+
+                    
+
+                    .dropdown-menu-2 {
+                        padding-left: 1.5em;
+                        
+                    }
+
+                    .dropdown-menu-3 {
+                        padding-left: 3em;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+
+
+    // OWL CAROUSEL 
+
+.owl-carousel {
+    position: relative;
+    
+    .wrapper, .wrapper-2 {
+        height: 830px;
+        object-fit: cover;
+       
+    }
+
+    .banner-content {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        width: 100%;
+        padding: 0 3em;
+        height: 300px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        color: #fff;
+        h1 {
+            font-size: 2.34rem;
+            margin-bottom: .8em;
+            line-height: 1.5;
+        }
+        p {
+            font-weight: 300;
+            letter-spacing: 1.1;
+            font-size: .85rem;
+            line-height: 2;
+        }
+
+        .buttons {
+            margin-top: 2em;
+            .btn.get-started {
+                background-color: $color-one;
+                color: #fff;
+                margin-right: 1em;
+                padding: .6em 2em;
+                font-size: 1rem;
+                text-transform: uppercase;
+                border: 2px solid $color-one;
+                &:hover {
+                    background-color: transparent;
+                    color: $color-one;
+                    border: 2px solid $color-one;
+                }
+            }
+
+            .btn.contact-us {
+                background-color: transparent;
+                border: 2px solid $color-one;
+                color: $color-one;
+                padding: .6em 2em;
+                font-size: 1rem;
+                text-transform: uppercase;
+            }
+        }
+
+
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+// FACT COUNTER 
+
+section#fact-counter {
+    .container {
+        .row {
+            div { 
+                margin-bottom: 7em;
+                width: 350px;
+            }
+        }
+    }
+}
+
+
+
+
+
+// OUR SERVICES 
+
+section#our-services {
+    .wrapper-3 {
+        height: 100%;
+        .container {
+            .row {
+            
+                .second-col {
+                    iframe {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+section#dentists {
+    .container {
+        .row {
+            div {
+                .card {
+                    width: 200px;
+                    
+                    img {
+                        height: 250px;
+                        width: 200px;
+                        object-fit: cover;
+                    }
+
+                    .card-media {
+                        display: none;
+                        position: absolute;
+                        bottom: 100px;
+                        left: 0;
+                        right: 0;
+                        width: 165px;
+                        margin: 0 auto;
+                        transition: .4s;
+                        
+                        .fa-facebook-f {
+                            padding-left: .8em;
+                            padding-right: .8em;
+                        }
+
+                        .fa-twitter {
+                            padding-left: .6em;
+                            padding-right: .6em;
+                        }
+                    }
+
+
+                    .card-body {
+                        width: 200px;
+                        height: 85px;
+                    }
+                }
+            }
+
+                
+        }
+    }
+
+
+}
+
+
+
+// LATEST NEWS 
+
+section#latest-news {
+    height: 100%;
+    margin-bottom: 0;
+    .container {
+        .row {
+            
+            .col-xxl-4 {
+                width: 200px;
+                height: 200px;
+                margin-right: 2em;
+            }
+
+            img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .card {
+                width: 200px;
+                height: 500px;
+            }
+        }
+
+    }
+}
+
+
+
+// FOOTER
+
+footer {
+    .wrapper-6 {
+        .container {
+            .header-row {
+                padding-top: 4em;
+                align-items: center;
+                img {
+                    width: 150px;
+                    height: 100px;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    font-size: 1.4rem;
+                    color: #fff;
+                    margin-bottom: 2em;
+                }
+
+                color: #fff;
+
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        color: $color-one;
+                    }
+                }
+
+
+                input {
+                    margin: 1em 0;
+                }
+
+                .social-media {
+                    i {
+                        padding: .5em;
+
+                        &:hover {
+                            color: $color-one;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .first-col {
+                margin-bottom: 3em;
+            }
+            
+
+
+            .copyright {
+                border-top: 1px solid lightgrey;
+                color: lightgrey;
+                text-align: center;
+                margin-top: 5em;
+                padding-top: 2.5em;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+}
+
+
+// SM SCREENS 
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+    // ADDRESS BAR
+    .address-bar {
+        padding-top: .8em;
+        padding-bottom: .8em;
+        
+        .container {    
+            span {
+                display: none;
+            }
+    
+            .social-media {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+     // MAIN NAV 
+
+     .navbar {
+        .container {
+            img.nav-logo {
+                width: 100px;
+                height: 80px;
+                object-fit: cover;
+            }
+
+            .navbar-toggler {
+                order: 3;
+            }
+
+            .navbar-collapse {
+                background-color: #fff;
+                width: 300px;
+                position: absolute;
+                left: 0;
+                top: 0px;
+                box-shadow: 1px 1px 30px grey;
+
+                ul.navbar-nav {
+                    background-color: #fff;
+                    margin-top: 2em;
+                    margin-bottom: 26em;
+                    padding-top: 5em;
+                    
+                    li.nav-item {
+                        background-color: #F2F4F8;
+                        border-bottom: 1px solid #fff;
+                        letter-spacing: 0.2;
+                        font-size: .9rem;
+                    }
+
+
+                    ul.dropdown-menu {
+                        margin-left: -.86em;
+                        width: 300px;
+                        border: none;
+
+                        li {
+                        animation-name: fade;
+                        animation-duration: 1s;
+                        }
+                    }
+
+
+                    
+
+                    .dropdown-menu-2 {
+                        padding-left: 1.5em;
+                        
+                    }
+
+                    .dropdown-menu-3 {
+                        padding-left: 3em;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+
+
+
+    // OWL CAROUSEL 
+
+.owl-carousel {
+    position: relative;
+    
+    .wrapper, .wrapper-2 {
+        height: 830px;
+        object-fit: cover;
+       
+    }
+
+    .banner-content {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        width: 100%;
+        height: 300px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        padding: 0 1em;
+        color: #fff;
+        h1 {
+            font-size: 2.1rem;
+            margin-bottom: .8em;
+            line-height: 1.5;
+        }
+        p {
+            font-weight: 300;
+            letter-spacing: 1.1;
+            font-size: .9rem;
+            line-height: 2;
+        }
+
+        .buttons {
+            margin-top: 2em;
+            .btn.get-started {
+                background-color: $color-one;
+                color: #fff;
+                margin-right: 1em;
+                padding: .6em 2em;
+                font-size: 1rem;
+                text-transform: uppercase;
+                border: 2px solid $color-one;
+                &:hover {
+                    background-color: transparent;
+                    color: $color-one;
+                    border: 2px solid $color-one;
+                }
+            }
+
+            .btn.contact-us {
+                background-color: transparent;
+                border: 2px solid $color-one;
+                color: $color-one;
+                padding: .6em 2em;
+                font-size: 1rem;
+                text-transform: uppercase;
+            }
+        }
+
+
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+// ABOUT US
+
+section#about-us {
+    .container {
+        .row {
+            .about-img {
+                height: 600px;
+            
+                object-fit: cover;
+            }
+
+            h2 {
+                margin-bottom: 1.6em;
+                font-size: 1.7rem;
+            }
+
+            h2::after {
+                content: "";
+                background-color: $color-one;
+                width: 70px;
+                height: 4px;
+                display: block;
+                margin-top: .7em;
+            }
+
+
+            .about-content {
+                margin-bottom: 3em;
+                color: #707070;
+                font-weight: 400;
+                font-size: .9rem;
+            }
+
+            .about-col {
+                align-self: center;
+                margin-top: 5em;
+            }
+
+
+            .about-bars {
+                .bar-wrapper {
+                    p {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 1rem;
+                    }
+
+                    
+
+                    .bar {
+                        width: 100%;
+                        height: 10px;
+                        border-radius: 1px;
+                        background-color: lightgrey;
+                        margin-bottom: 1.4em;
+                    }
+
+                    .bar::after {
+                        content: "";
+                        width: 80%;
+                        height: 10px;
+                        border-radius: 1px;
+                        background-color: $color-one;
+                        display: block;
+                    }
+
+                    .bar-1::after {
+                        width: 80%;
+                    }
+
+                    .bar-2::after {
+                        width: 65%;
+                    }
+
+                    .bar-3::after {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// FACT COUNTER 
+
+section#fact-counter {
+    .container {
+        .row {
+            div { 
+                margin-bottom: 7em;
+                width: 250px;
+            }
+        }
+    }
+}
+
+
+
+
+// OUR SERVICES 
+
+section#our-services {
+    .wrapper-3 {
+        height: 100%;
+        .container {
+            .row {
+            
+                .second-col {
+                    iframe {
+                        display: block;
+                        margin: 0 auto;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+// BOOK APPOINTMENT 
+
+section#appointment {
+    .wrapper-4 {
+        height: 900px;
+    }
+}
+
+
+
+section#dentists {
+    .container {
+        .row {
+            div {
+                margin: 1em auto;
+                .card {
+                    width: 400px;
+                    
+                    img {
+                        height: 400px;
+                        width: 400px;
+                        object-fit: cover;
+                    }
+
+                    .card-media {
+                        display: none;
+                        position: absolute;
+                        bottom: 100px;
+                        left: 0;
+                        right: 0;
+                        width: 165px;
+                        margin: 0 auto;
+                        transition: .4s;
+                        
+                        .fa-facebook-f {
+                            padding-left: .8em;
+                            padding-right: .8em;
+                        }
+
+                        .fa-twitter {
+                            padding-left: .6em;
+                            padding-right: .6em;
+                        }
+                    }
+
+
+                    .card-body {
+                        width: 400px;
+                        height: 85px;
+                        bottom: -20px;
+                    }
+                }
+            }
+
+                
+        }
+    }
+
+
+}
+
+
+
+
+
+
+// TESTIMONIALS
+
+section#testimonial {
+    .wrapper-5 {
+        height: 700px;
+        .container {
+            .carousel-2 {
+                    .object {
+                        height: 700px; 
+                    }
+            }
+        }
+    }
+        
+}
+
+
+
+
+
+// LATEST NEWS 
+
+section#latest-news {
+    height: 1300px;
+    margin-bottom: 0;
+    .container {
+        .row {
+            
+            .col-xxl-4 {
+                width: 200px;
+                height: 200px;
+                margin-right: 2em;
+            }
+
+            .third-col {
+                margin-top: 23em;
+            }
+
+            img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .card {
+                width: 200px;
+                height: 500px;
+            }
+        }
+
+    }
+}
+
+
+
+// FOOTER
+
+footer {
+    .wrapper-6 {
+        .container {
+            .header-row {
+                padding-top: 4em;
+                align-items: center;
+                img {
+                    width: 150px;
+                    height: 100px;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    font-size: 1.4rem;
+                    color: #fff;
+                    margin-bottom: 2em;
+                }
+
+                color: #fff;
+
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        color: $color-one;
+                    }
+                }
+
+
+                input {
+                    margin: 1em 0;
+                }
+
+                .social-media {
+                    i {
+                        padding: .5em;
+
+                        &:hover {
+                            color: $color-one;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .first-col {
+                margin-bottom: 3em;
+            }
+            
+
+            .third-col {
+                margin-bottom: 3em;
+            }
+            
+
+
+            .copyright {
+                border-top: 1px solid lightgrey;
+                color: lightgrey;
+                text-align: center;
+                margin-top: 5em;
+                padding-top: 2.5em;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+// XS SCREENS 
+
+@media (min-width: 230px) and (max-width: 575px) {
+
+
+    // ADDRESS BAR
+    .address-bar {
+        padding-top: .8em;
+        padding-bottom: .8em;
+        
+        .container {    
+            span {
+                display: none;
+            }
+    
+            .social-media {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+            }
+        }
+    }
+
+
+
+
+
+     // MAIN NAV 
+
+     .navbar {
+        .container {
+            img.nav-logo {
+                width: 100px;
+                height: 80px;
+                object-fit: cover;
+            }
+
+            .navbar-toggler {
+                order: 3;
+            }
+
+            .navbar-collapse {
+                background-color: #fff;
+                width: 300px;
+                position: absolute;
+                left: 0;
+                top: 0px;
+                box-shadow: 1px 1px 30px grey;
+
+                ul.navbar-nav {
+                    background-color: #fff;
+                    margin-top: 2em;
+                    margin-bottom: 26em;
+                    padding-top: 5em;
+                    
+                    li.nav-item {
+                        background-color: #F2F4F8;
+                        border-bottom: 1px solid #fff;
+                        letter-spacing: 0.2;
+                        font-size: .9rem;
+                    }
+
+
+                    ul.dropdown-menu {
+                        margin-left: -.86em;
+                        width: 300px;
+                        border: none;
+
+                        li {
+                        animation-name: fade;
+                        animation-duration: 1s;
+                        }
+                    }
+
+
+                    
+
+                    .dropdown-menu-2 {
+                        padding-left: 1.5em;
+                        
+                    }
+
+                    .dropdown-menu-3 {
+                        padding-left: 3em;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+     // OWL CAROUSEL 
+
+.owl-carousel {
+    position: relative;
+    
+    .wrapper, .wrapper-2 {
+        height: 830px;
+        object-fit: cover;
+       
+    }
+
+    .banner-content {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        padding: 0 1em;
+        color: #fff;
+        h1 {
+            font-size: 2.1rem;
+            margin-bottom: .8em;
+            line-height: 1.5;
+        }
+        p {
+            font-weight: 300;
+            letter-spacing: 1.1;
+            font-size: .9rem;
+            line-height: 2;
+        }
+
+        .buttons {
+            margin-top: 2em;
+            
+            .btn.get-started {
+                background-color: $color-one;
+                color: #fff;
+                margin-right: 1em;
+                padding: .6em 2em;
+                font-size: 1rem;
+                text-transform: uppercase;
+                border: 2px solid $color-one;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 1.3em;
+                &:hover {
+                    background-color: transparent;
+                    color: $color-one;
+                    border: 2px solid $color-one;
+                }
+            }
+
+            .btn.contact-us {
+                background-color: transparent;
+                border: 2px solid $color-one;
+                color: $color-one;
+                padding: .6em 2em;
+                font-size: 1rem;
+                text-transform: uppercase;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+
+        
+    }
+}
+
+
+
+
+
+
+
+// ABOUT US
+
+section#about-us {
+    .container {
+        .row {
+            .about-img {
+                height: 600px;
+            
+                object-fit: cover;
+            }
+
+            h2 {
+                margin-bottom: 1.6em;
+                font-size: 1.7rem;
+            }
+
+            h2::after {
+                content: "";
+                background-color: $color-one;
+                width: 70px;
+                height: 4px;
+                display: block;
+                margin-top: .7em;
+            }
+
+
+            .about-content {
+                margin-bottom: 3em;
+                color: #707070;
+                font-weight: 400;
+                font-size: .9rem;
+            }
+
+            .about-col {
+                align-self: center;
+                margin-top: 5em;
+            }
+
+
+            .about-bars {
+                .bar-wrapper {
+                    p {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 1rem;
+                    }
+
+                    
+
+                    .bar {
+                        width: 100%;
+                        height: 10px;
+                        border-radius: 1px;
+                        background-color: lightgrey;
+                        margin-bottom: 1.4em;
+                    }
+
+                    .bar::after {
+                        content: "";
+                        width: 80%;
+                        height: 10px;
+                        border-radius: 1px;
+                        background-color: $color-one;
+                        display: block;
+                    }
+
+                    .bar-1::after {
+                        width: 80%;
+                    }
+
+                    .bar-2::after {
+                        width: 65%;
+                    }
+
+                    .bar-3::after {
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// FACT COUNTER 
+
+section#fact-counter {
+    .container {
+        .row {
+            div { 
+                margin-bottom: 7em;
+                width: 200px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// OUR SERVICES 
+
+section#our-services {
+    .wrapper-3 {
+        height: 120%;
+        .container {
+            .row {
+            
+                .second-col {
+                    iframe {
+                        display: block;
+                        margin: 0 auto;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// BOOK APPOINTMENT 
+
+section#appointment {
+    .wrapper-4 {
+        height: 900px;
+    }
+}
+
+
+
+
+
+section#dentists {
+    .container {
+        .row {
+            div {
+                margin: 1em auto;
+                .card {
+                    width: 250px;
+                    
+                    img {
+                        height: 250px;
+                        width: 250px;
+                        object-fit: cover;
+                    }
+
+                    .card-media {
+                        display: none;
+                        position: absolute;
+                        bottom: 100px;
+                        left: 0;
+                        right: 0;
+                        width: 165px;
+                        margin: 0 auto;
+                        transition: .4s;
+                        
+                        .fa-facebook-f {
+                            padding-left: .8em;
+                            padding-right: .8em;
+                        }
+
+                        .fa-twitter {
+                            padding-left: .6em;
+                            padding-right: .6em;
+                        }
+                    }
+
+
+                    .card-body {
+                        width: 250px;
+                        height: 85px;
+                        bottom: -20px;
+                    }
+                }
+            }
+
+                
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+// TESTIMONIALS
+
+section#testimonial {
+    .wrapper-5 {
+        height: 700px;
+        .container {
+            .carousel-2 {
+                    .object {
+                        height: 700px; 
+                    }
+            }
+        }
+    }
+        
+}
+
+
+
+// LATEST NEWS 
+
+section#latest-news {
+    .container {
+        .row {
+            justify-content: center;
+            .col-4 {
+                margin-bottom: 3em;
+            }
+
+            img {
+                width: 300px;
+                height: 200px;
+            }
+
+            .card {
+                width: 300px;
+                height: 500px;
+                margin-left: 2em;
+            }
+        }
+    }
+}
+
+
+
+
+// FOOTER
+
+footer {
+    .wrapper-6 {
+        .container {
+            .header-row {
+                padding-top: 4em;
+                align-items: center;
+                img {
+                    width: 150px;
+                    height: 100px;
+                    object-fit: cover;
+                }
+
+                h3 {
+                    font-size: 1.4rem;
+                    color: #fff;
+                    margin-bottom: 2em;
+                }
+
+                color: #fff;
+
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        color: $color-one;
+                    }
+                }
+
+
+                input {
+                    margin: 1em 0;
+                }
+
+                .social-media {
+                    i {
+                        padding: .5em;
+
+                        &:hover {
+                            color: $color-one;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .first-col {
+                margin-bottom: 3em;
+            }
+            
+
+            .third-col {
+                margin-bottom: 3em;
+            }
+            
+
+
+            .copyright {
+                border-top: 1px solid lightgrey;
+                color: lightgrey;
+                text-align: center;
+                margin-top: 5em;
+                padding-top: 2.5em;
+                font-size: .8rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+.active {
+  color: #00AEEF !important;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+li, button, a, h2, h3 {
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  transition: .3s;
+}
+
+a:hover {
+  color: #00AEEF;
+  transition: .3s;
+}
+
+.wrapper {
+  height: 700px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-carousel-1.jpg");
+  /* The least supported option. */
+}
+
+.wrapper-2 {
+  height: 700px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-carousel-2.jpg");
+  /* The least supported option. */
+}
+
+.wrapper-3 {
+  height: 600px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-wrapper-3.jpg");
+  /* The least supported option. */
+}
+
+.wrapper-4 {
+  height: 700px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-wrapper-4.jpg");
+  /* The least supported option. */
+  background-position: center;
+}
+
+.wrapper-5 {
+  height: 400px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-wrapper-4.jpg");
+  /* The least supported option. */
+  background-position: center;
+}
+
+.wrapper-6 {
+  height: auto;
+  width: 100%;
+  padding-bottom: 1em;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-wrapper-4.jpg");
+  /* The least supported option. */
+  background-position: center;
+}
+
+.banner {
+  height: 200px;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  background: #C33764;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-carousel-1.jpg");
+  /* The least supported option. */
+  margin-bottom: 5em;
+  position: relative;
+}
+
+.banner h1 {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  height: 55px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li, button, a {
+  font-weight: 600;
+}
+
+.container .row .first-col {
+  margin-bottom: 5em;
+}
+
+.container .row .first-col iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.container .row .second-col {
+  margin-bottom: 5em;
+}
+
+.container .row .second-col .address-col {
+  background-color: #00AEEF;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.container .row .second-col .address-col h3 {
+  margin-bottom: .5em;
+  font-weight: 600;
+}
+
+.container .row .second-col .address-col p {
+  margin-bottom: 1em;
+  font-size: .9rem;
+}
+
+.container .row .second-col .touch-col h3 {
+  font-weight: 600;
+  font-size: 2.3rem;
+  margin-bottom: 1.4em;
+}
+
+.container .row .second-col .touch-col h3::after {
+  content: "";
+  background-color: #00AEEF;
+  width: 70px;
+  height: 4px;
+  display: block;
+  margin-top: .7em;
+}
+
+.container .row .second-col .touch-col input {
+  margin-bottom: 2em;
+}
+
+.container .row .second-col .touch-col textarea {
+  margin-bottom: 1em;
+}
+
+.container .row .second-col .touch-col button {
+  background-color: #00AEEF;
+  color: #fff;
+  font-weight: 600;
+  padding: .6em 1.5em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 520px) and (max-width: 991px) {
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (min-width: 270px) and (max-width: 519px) {
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
