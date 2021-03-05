@@ -34,12 +34,14 @@ a {
 .wrapper {
     height: 700px;
     width: 100%;
-    background: black;
+    // background: black;
     overflow: hidden;
     background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(72,93,114, .9),rgba(35,36,73, .9)), url("../images/pic-carousel-1.jpg");
-    background: -moz-linear-gradient (rgba(72,93,114, .9),rgba(35,36,73, .9)), url("../images/pic-carousel-1.jpg");
-    background: linear-gradient(rgba(72,93,114, .9),rgba(35,36,73, .9)), url("../images/pic-carousel-1.jpg"); /* The least supported option. */
+    background: -webkit-linear-gradient(rgba(0,0,0, .9),rgba(0,0,0, .9)), url("../images/pic-carousel-1.jpg") !important;
+    background: -moz-linear-gradient (rgba(0,0,0, .4),rgba(0,0,0, .4)), url("../images/pic-carousel-1.jpg") !important;
+    background: linear-gradient(rgba(0,0,0, .4),rgba(0,0,0, .4)), url("../images/pic-carousel-1.jpg") !important; /* The least supported option. */
+    
+    
 }
 
 

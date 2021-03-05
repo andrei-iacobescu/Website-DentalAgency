@@ -28,11 +28,10 @@ a:hover {
 .wrapper {
   height: 700px;
   width: 100%;
-  background: black;
   overflow: hidden;
   background: #C33764;
   /* fallback colour. Make sure this is just one solid colour. */
-  background: linear-gradient(rgba(72, 93, 114, 0.9), rgba(35, 36, 73, 0.9)), url("../images/pic-carousel-1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/pic-carousel-1.jpg") !important;
   /* The least supported option. */
 }
 
